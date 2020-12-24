@@ -71,13 +71,10 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   firebase.analytics().setUserId('6111489ac0ca06afa5579829aac605edf0afe6689385362e747b5c76680e705e');
-  firebase.analytics().logEvent('select_content', {
-  content_type: 'image',
-  content_id: 'P12453',
-  items: [{ name: 'Kittens' }]
-    })
+  firebase.analytics().logEvent('page_view', { page_title: 'testestset33'});
+
   gtag('config', 'G-DL5PY8TLHN', {
-  'page_title' : 'homepage_test',
+  'page_title' : 'homepage_test33',
   'page_path': '/home'
 });
 </script>
