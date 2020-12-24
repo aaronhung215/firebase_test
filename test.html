@@ -111,7 +111,9 @@
   firebase.analytics().setUserId('6111489ac0ca06afa5579829aac605edf0afe6689385362e747b5c76680e705e');
   analytics.logEvent('page_view', { page_title: 'testestset'});
   gtag('event', 'page_view', {
-    method: 'Google'
+    page_location: 'https://example.com/about',
+    page_path: '/about',
+    page_title: 'About'
   });
 
   gtag('config', 'G-DL5PY8TLHN', {
