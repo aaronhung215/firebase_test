@@ -76,15 +76,15 @@
  //   send_page_view: false
  // });
 
-  firebase.analytics().logEvent('page_view', { 
-    page_title: 'homepage_test1225',
-    page_location: '/home1225'
-  });
+  gtag('config', 'G-DL5PY8TLHN', {
+  'page_title' : 'override_title',
+  'page_path': '/override'
+});
 
-  firebase.analytics().logEvent('page_view1234', { 
-    page_title: 'homepage_test12251234',
-    page_location: '/home12251234'
-  });
+ // firebase.analytics().logEvent('page_view1234', { 
+ //   page_title: 'homepage_test12251234',
+//    page_location: '/home12251234'
+//  });
 
 //
  //gtag('page_view', {
