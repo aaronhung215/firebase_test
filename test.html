@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Default Title3</title>
+    <title>Default Title Gtag</title>
 
     <!-- update the version number as needed -->
     <script defer src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
@@ -68,17 +68,24 @@
     measurementId: "G-DL5PY8TLHN"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+ // firebase.initializeApp(firebaseConfig);
+ // firebase.analytics();
  // firebase.analytics().setUserId('6111489ac0ca06afa5579829aac605edf0afe6689385362e747b5c76680e705e');
  // firebase.analytics().logEvent('page_view', { page_title: 'testestset33'});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DL5PY8TLHN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
   gtag('config', 'G-DL5PY8TLHN', {
     send_page_view: false
   });
 
   gtag('config', 'G-DL5PY8TLHN', {
-  'page_title' : 'override_title3',
-  'page_path': '/override3'
+  'page_title' : 'override_title3_gtag_config',
+  'page_path': '/override_title3_gtag_config'
 });
 
  // firebase.analytics().logEvent('page_view1234', { 
