@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Default Title Gtag</title>
+    <title>Default Title Gtag2with FA config</title>
 
     <!-- update the version number as needed -->
     <script defer src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
@@ -84,10 +84,12 @@
   });
 
   gtag('config', 'G-DL5PY8TLHN', {
-  'page_title' : 'override_title3_gtag_config',
-  'page_path': '/override_title3_gtag_config'
+  'page_title' : 'override_title3_gtag_config_2',
+  'page_path': '/override_title3_gtag_config_2'
 });
 
+ firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
  // firebase.analytics().logEvent('page_view1234', { 
  //   page_title: 'homepage_test12251234',
 //    page_location: '/home12251234'
