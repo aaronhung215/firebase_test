@@ -71,6 +71,7 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   firebase.analytics().setUserId('6111489ac0ca06afa5579829aac605edf0afe6689385362e747b5c76680e705e');
+  firebase.analytics().setUserProperties({favorite_food: '6111489ac0ca06afa5579829aac605edf0afe6689385362e747b5c76680e705e'});
   firebase.analytics().logEvent('page_view', { page_title: 'testestset33'});
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL5PY8TLHN"></script>
